@@ -57,7 +57,6 @@ export default class Result extends Component {
       <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollContainer} >
           <View>
-            <Text>result</Text>
             <FormLabel>First Name</FormLabel>
             <FormInput value={parsedText.fields.firstName} />
             <FormLabel>Last Name</FormLabel>
@@ -75,6 +74,8 @@ export default class Result extends Component {
             <FormLabel>Document number</FormLabel>
             <FormInput value={parsedText.fields.documentNumber} />
           </View>
+
+
 
 
         </ScrollView>

@@ -4,21 +4,26 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "devtools": "react-devtools"
   },
   "dependencies": {
+    "firebase": "^5.4.2",
     "mrz": "^3.1.0",
+    "native-base": "^2.8.0",
     "react": "16.4.1",
     "react-native": "0.57.0-rc.3",
     "react-native-camera": "^1.2.0",
     "react-native-elements": "^0.19.1",
     "react-native-image-resizer": "^1.0.0",
-    "react-native-vector-icons": "^5.0.0"
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "^2.12.1"
   },
   "devDependencies": {
     "babel-jest": "23.4.2",
     "jest": "23.5.0",
     "metro-react-native-babel-preset": "0.43.5",
+    "react-devtools": "^3.3.2",
     "react-test-renderer": "16.4.1"
   },
   "jest": {

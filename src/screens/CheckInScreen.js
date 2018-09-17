@@ -11,6 +11,7 @@ import {
 import { RNCamera } from 'react-native-camera';
 import ImageResizer from 'react-native-image-resizer';
 
+
 //config for google cloud vision
 import config from '../../config';
 
@@ -26,6 +27,7 @@ export default class App extends Component {
     hasScanned: false
   };
 
+
   onSubmit = () => {
     this.props.results
   }
@@ -40,9 +42,10 @@ export default class App extends Component {
               }}
               style={styles.preview}
               type={RNCamera.Constants.Type.back}
-
               permissionDialogTitle={'Permission to use camera'}
-              permissionDialogMessage={'We need your permission to use your camera phone'}>
+              permissionDialogMessage={'We need your permission to use your camera phone'}
+            >
+
 
               <View style={{ flex: 0, flexDirection: 'row', justifyContent: 'center', }}>
                 <TouchableOpacity
@@ -58,8 +61,6 @@ export default class App extends Component {
       </View>
     );
   }
-
-
   takePicture = async function () {
     if (!this.state.loading) {
       if (this.camera) {
@@ -88,6 +89,8 @@ export default class App extends Component {
 //     console.error(err)
 //   });
 // }
+
+//google cloud vision api call
 async function checkForText(base64) {
   console.log(base64)
   return await

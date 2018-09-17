@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TextInput, ScrollView, Button, StyleSheet } from 'react-native';
 import * as parser from 'mrz';
-
 import { FormInput, FormLabel } from 'react-native-elements';
 
 
@@ -14,6 +13,8 @@ export default class Result extends Component {
     this.state = {
     };
   }
+
+
 
   render() {
     const lastBlock = this.props.result.responses[0].fullTextAnnotation.pages[0].blocks.length - 1;
@@ -48,6 +49,7 @@ export default class Result extends Component {
     let birthdateParsed = birthDate[4] + birthDate[5] + '.' + birthDate[2] + birthDate[3] + '.' + birthDate[0] + birthDate[1]
     console.log(mrzArray)
     console.log(parsedText);
+
 
 
 
